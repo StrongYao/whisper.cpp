@@ -1,6 +1,6 @@
 if (WHISPER_SDL2)
     set(TARGET whisper-stream)
-    add_executable(${TARGET} stream.cpp)
+    add_executable(${TARGET} stream.cpp ./wave_io/audio_wave.h ./wave_io/audio_wave.c)
 
     include(DefaultTargetOptions)
 
